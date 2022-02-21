@@ -4,12 +4,14 @@ from datetime import datetime
 
 
 dates = {}
-
+#open file and parse 
 with open('bink_data.csv', 'r') as f:
     for row in csv.DictReader(f):
+        #specify date range needed
         if datetime.date('01-06-2009') < datetime.date('31-08-2007'):
+            #redo the dictionary and print
             dates.append()
-            print(dates)
+            pprint.pp(dates)
 
         #if col1 is > 
         #date_col1 = datetime.strptime(row[7], '01-06-2009')
