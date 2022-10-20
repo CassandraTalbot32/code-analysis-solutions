@@ -1,17 +1,16 @@
-# importing the module
 import csv
 import pprint
 import unittest
-# open the file in read mode
+# Open the file in read mode
 filename = open('bink_data.csv', 'r')
 
-# creating dictreader object
+# Creating dictreader object
 file = csv.DictReader(filename)
 
-# create empty list
+# Create empty list
 data = []
 
-# iterate over each row and append values to empty list
+# Iterate over each row and append values to empty list
 
 for col in file:
 	data.append(col['Current Rent'])
